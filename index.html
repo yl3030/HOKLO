@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOKLO</title>
+    <link rel="stylesheet" href="./public/css/bootstrap - hoklo.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <!-- awesomefont CDN -->
+    <script src="https://kit.fontawesome.com/69fd600045.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="l-header">
+        <div class="container top-header">
+            <img src="./public/img/hoklo_logo.png" alt="logo" class="logo">
+            <div class="search">
+                <form>
+                    <input type="text" class="border-top border-bottom border-left border-right-0 border-gray-300">
+                    <button>
+                        <img src="./public/img/search.png" alt="search" class="search">
+                    </button>
+                </form>
+            </div>
+            <div class="icon">
+                <!-- 未登入 -->
+                <!-- <div class="icon-box rounded-circle">
+                    <img src="./public/img/user.png" alt="user">
+                    <div class="user-content border border-gray-300">
+                        <ul>
+                            <li><a href="#">登入</a></li>
+                            <li><a href="#">註冊</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <!-- 已登入 -->
+                <div class="icon-box rounded-circle">
+                    <div class="user-circle rounded-circle bg"
+                        style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+                    </div>
+                    <div class="user-content border border-gray-300">
+                        <ul>
+                            <li><a href="#">會員中心</a></li>
+                            <li><a href="#">查訂單</a></li>
+                            <li><a href="#">折價券</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="icon-box rounded-circle">
+                    <img src="./public/img/cart.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="bottom-header flex-style">
+                <ul class="navbar">
+                    <li>
+                        <a href="#">防疫首選</a>
+                    </li>
+                    <li>
+                        <a href="#">獨家套裝</a>
+                    </li>
+                    <li>
+                        <a href="#">窈窕必備</a>
+                    </li>
+                    <li>
+                        <a href="#">藥師激推</a>
+                    </li>
+                    <li>
+                        <a href="#">機能保健</a>
+                    </li>
+                    <li>
+                        <a href="#">發光美肌</a>
+                    </li>
+                    <li>
+                        <a href="#">安眠舒壓</a>
+                    </li>
+                    <li>
+                        <a href="#">品牌專區</a>
+                    </li>
+                </ul>
+                <div class="bh-icon">
+                    <div class="icon">
+                        <div class="icon-box rounded-circle search-icon">
+                            <img src="./public/img/search-blue.png" alt="">
+                        </div>
+                        <!-- 未登入 -->
+                        <!-- <div class="icon-box rounded-circle">
+                    <img src="./public/img/user.png" alt="user">
+                    <div class="user-content border border-gray-300">
+                        <ul>
+                            <li><a href="#">登入</a></li>
+                            <li><a href="#">註冊</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                        <!-- 已登入 -->
+                        <div class="icon-box rounded-circle">
+                            <div class="user-circle rounded-circle bg"
+                                style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+                            </div>
+                            <div class="user-content border border-gray-300">
+                                <ul>
+                                    <li><a href="#">會員中心</a></li>
+                                    <li><a href="#">查訂單</a></li>
+                                    <li><a href="#">折價券</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon-box rounded-circle">
+                            <img src="./public/img/cart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <header class="m-header">
+        <div class="container">
+            <div class="flex-style">
+            <img src="./public/img/hoklo_logo.png" alt="logo" class="logo">
+            <div class="icon">
+                <div class="icon-box rounded-circle search-icon">
+                    <img src="./public/img/search-blue.png" alt="">
+                </div>
+                <div class="icon-box rounded-circle">
+                    <img src="./public/img/cart.png" alt="">
+                </div>
+                <div class="icon-box rounded-circle menu">
+                    <img src="./public/img/menu.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <form id="search-box">
+        <input type="text" placeholder="請輸入關鍵字" class="border-0">
+    </form>
+    <div class="menu-box">
+        <div class="container">
+        <div class="menu-header">
+            <img src="./public/img/hoklo_logo.png" alt="logo" class="logo">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <nav class="menu-nav py-1 pl-0_5">
+            <ul class="border-bottom pb-1">
+                <li>
+                    <a href="#">防疫首選</a>
+                </li>
+                <li>
+                    <a href="#">獨家套裝</a>
+                </li>
+                <li>
+                    <a href="#">窈窕必備</a>
+                </li>
+                <li>
+                    <a href="#">藥師激推</a>
+                </li>
+                <li>
+                    <a href="#">機能保健</a>
+                </li>
+                <li>
+                    <a href="#">發光美肌</a>
+                </li>
+                <li>
+                    <a href="#">安眠舒壓</a>
+                </li>
+                <li>
+                    <a href="#">品牌專區</a>
+                </li>
+            </ul>
+            <!-- 未登入 -->
+            <div class="user-box pt-2">
+                <img src="./public/img/user.png" alt="">
+                <span>登入</span>
+            </div>
+            <!-- 已登入 -->
+            <!-- <div class="user-box">
+                <div class="user-circle rounded-circle bg"
+                                style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+                            </div>
+                <span>Tony Chen</span>
+            </div> -->
+        </nav>
+    </div>
+    </div>
+
+    <!-- banner -->
+    <div id="banner" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#banner" data-slide-to="0" class="active"></li>
+            <li data-target="#banner" data-slide-to="1"></li>
+            <li data-target="#banner" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active bg"
+                style="background-image: url(https://images.unsplash.com/photo-1607528971899-2e89e6c0ec69?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80);">
+                <img src="https://images.unsplash.com/photo-1607528971899-2e89e6c0ec69?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item bg"
+                style="background-image: url(https://cdn.pixabay.com/photo/2020/07/12/13/10/traditional-chinese-medicine-5397194_1280.jpg);">
+                <img src="https://cdn.pixabay.com/photo/2020/07/12/13/10/traditional-chinese-medicine-5397194_1280.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item bg"
+                style="background-image: url(https://cdn.pixabay.com/photo/2016/11/18/18/11/asparagus-1836178_1280.jpg);">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/18/11/asparagus-1836178_1280.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#banner" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon arrow" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#banner" role="button" data-slide="next">
+            <span class="carousel-control-next-icon arrow" aria-hidden="true"><i
+                    class="fas fa-chevron-right"></i></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="classify container flex-style mt-lg-5 mt-3">
+        <div class="c-box">
+            <a href="#">
+                <img src="./public/img/about_icon1.png" alt="">
+                <h5>免運直送</h5>
+            </a>
+        </div>
+        <div class="c-box">
+            <a href="#">
+                <img src="./public/img/about_icon2.png" alt="">
+                <h5>聰明取貨</h5>
+            </a>
+        </div>
+        <div class="c-box">
+            <a href="#">
+                <img src="./public/img/about_icon3.png" alt="">
+                <h5>防疫首選</h5>
+            </a>
+        </div>
+        <div class="c-box">
+            <a href="#">
+                <img src="./public/img/about_icon4.png" alt="">
+                <h5>藥師激推</h5>
+            </a>
+        </div>
+        <div class="c-box">
+            <a href="#">
+                <img src="./public/img/about_icon5.png" alt="">
+                <h5>限時搶購</h5>
+            </a>
+        </div>
+        <div class="c-box">
+            <a href="#">
+                <img src="./public/img/about_icon6.png" alt="">
+                <h5>新品上架</h5>
+            </a>
+        </div>
+        <div class="c-box">
+            <a href="#">
+                <img src="./public/img/about_icon7.png" alt="">
+                <h5>館長推薦</h5>
+            </a>
+        </div>
+        <div class="c-box">
+            <a href="#">
+                <img src="./public/img/about_icon8.png" alt="">
+                <h5>HOKLO獨家</h5>
+            </a>
+        </div>
+    </div>
+
+    <div class="advertising w-100 py-lg-3_5 py-3 mt-lg-5 mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="ad col-lg-6 col-md-6 col-12 mb-lg-0 mb-1">
+                    <div class="ad-pic bg"
+                        style="background-image: url(https://elixirherbary.s3.amazonaws.com/p/img_pool/jM5BeC_p01.jpg);">
+                        <img src="https://elixirherbary.s3.amazonaws.com/p/img_pool/jM5BeC_p01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ad col-lg-6 col-md-6 col-12">
+                    <div class="ad-pic bg"
+                        style="background-image: url(https://cdn.pixabay.com/photo/2015/08/21/08/03/traditional-chinese-898567_1280.jpg);">
+                        <img src="https://cdn.pixabay.com/photo/2015/08/21/08/03/traditional-chinese-898567_1280.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="favorite container mt-lg-5 mt-3">
+        <h3 class="title">- HO粉最愛 -</h3>
+        <div class="row">
+            <div class="c-box col-lg-2 col-md-2 col-md-2 col-4 px-1 my-lg-0 my-0_5 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="rounded-circle">
+                        <img src="./public/img/about_icon1.png" alt="">
+                    </div>
+                    <h5>免運直送</h5>
+                </a>
+            </div>
+            <div class="c-box col-lg-2 col-md-2 col-4 px-1 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="rounded-circle">
+                        <img src="./public/img/about_icon2.png" alt="">
+                    </div>
+                    <h5>聰明取貨</h5>
+                </a>
+            </div>
+            <div class="c-box col-lg-2 col-md-2 col-4 px-1 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="rounded-circle">
+                        <img src="./public/img/about_icon3.png" alt="">
+                    </div>
+                    <h5>防疫首選</h5>
+                </a>
+            </div>
+            <div class="c-box col-lg-2 col-md-2 col-4 px-1 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="rounded-circle">
+                        <img src="./public/img/about_icon4.png" alt="">
+                    </div>
+                    <h5>藥師激推</h5>
+                </a>
+            </div>
+            <div class="c-box col-lg-2 col-md-2 col-4 px-1 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="rounded-circle">
+                        <img src="./public/img/about_icon5.png" alt="">
+                    </div>
+                    <h5>限時搶購</h5>
+                </a>
+            </div>
+            <div class="c-box col-lg-2 col-md-2 col-4 px-1 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="rounded-circle">
+                        <img src="./public/img/about_icon6.png" alt="">
+                    </div>
+                    <h5>新品上架</h5>
+                </a>
+            </div>
+        </div>
+        <button class="lookall">看全部</button>
+    </div>
+
+    <div class="product mt-lg-5 mt-3">
+        <h3 class="title">- 新品上架 -</h3>
+        <div class="container">
+            <div class="row">
+                <div class="ad col-lg-3 col-6 my-lg-0 my-0_5">
+                    <div class="ad-pic bg"
+                        style="background-image: url(https://cdn.pixabay.com/photo/2015/08/25/03/50/herbs-906140_1280.jpg);">
+                        <img src="https://cdn.pixabay.com/photo/2015/08/25/03/50/herbs-906140_1280.jpg" alt="">
+                    </div>
+                </div>
+                <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
+                    <a href="#">
+                        <div class="prod-content">
+                            <div class="product-pic bg"
+                                style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/G5P3R3_mid_20191104_%E6%9C%88%E8%B2%B4%E5%A6%83%E8%A6%96%E8%A6%BA.jpg);">
+                                <div class="tag">最新上架</div>
+                            </div>
+                            <div class="prod-text">
+                                <h5 class="name">【丹淨生活】月貴妃養顏飲 (7包/盒)</h5>
+                                <p class="price">NTD 1,480</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                </div>
+                <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
+                    <a href="#">
+                        <div class="prod-content">
+                            <div class="product-pic bg"
+                                style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/vZomnk_mid_20200130_%E5%91%A8%E5%85%AC%E6%BC%A2%E7%9C%A0%E8%A6%96%E8%A6%BA_1.png);">
+                                <div class="tag">藥局取貨</div>
+                            </div>
+                            <div class="prod-text">
+                                <h5 class="name">【丹淨生活】 周公漢眠舒眠飲 (7包/盒)</h5>
+                                <p class="price">NTD 1,480</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                </div>
+                <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
+                    <a href="#">
+                        <div class="prod-content">
+                            <div class="product-pic bg"
+                                style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/G5P3R3_mid_20191104_%E6%9C%88%E8%B2%B4%E5%A6%83%E8%A6%96%E8%A6%BA.jpg);">
+                                <div class="tag">會員獨享</div>
+                            </div>
+                            <div class="prod-text">
+                                <h5 class="name">【丹淨生活】月貴妃養顏飲 (7包/盒)</h5>
+                                <p class="price">NTD 1,480</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="brand bg" style="background-image: url(./public/img/brand2.jpg);"></a>
+                </div>
+            </div>
+        </div>
+        <button class="lookall">看全部</button>
+    </div>
+
+    <div class="video container mt-lg-5 mt-3">
+        <h3 class="title">- 看影片更好買 -</h3>
+        <div class="v-box">
+            <iframe src="https://www.youtube.com/embed/YW2500_G6Io" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="advertising mt-lg-5 mt-3 py-lg-3_5 py-3">
+        <div class="container">
+            <h3 class="title">- 館長推薦 -</h3>
+            <div class="ad"
+                style="background-image: url(https://cdn.pixabay.com/photo/2018/12/07/00/19/savoy-3860933_1280.jpg);">
+            </div>
+        </div>
+    </div>
+
+    <div class="product container mt-lg-5 mt-3">
+        <h3 class="title">- 防疫首選 -</h3>
+        <div class="row">
+            <div class="ad col-lg-3 col-6 my-lg-0 my-0_5">
+                <div class="ad-pic bg"
+                    style="background-image: url(https://cdn.pixabay.com/photo/2015/09/05/00/27/herbs-923496_1280.jpg);">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/05/00/27/herbs-923496_1280.jpg" alt="">
+                </div>
+            </div>
+            <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="prod-content">
+                        <div class="product-pic bg"
+                            style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/G5P3R3_mid_20191104_%E6%9C%88%E8%B2%B4%E5%A6%83%E8%A6%96%E8%A6%BA.jpg);">
+                            <div class="tag">最新上架</div>
+                        </div>
+                        <div class="prod-text">
+                            <h5 class="name">【丹淨生活】月貴妃養顏飲 (7包/盒)</h5>
+                            <p class="price">NTD 1,480</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+            </div>
+            <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="prod-content">
+                        <div class="product-pic bg"
+                            style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/vZomnk_mid_20200130_%E5%91%A8%E5%85%AC%E6%BC%A2%E7%9C%A0%E8%A6%96%E8%A6%BA_1.png);">
+                            <div class="tag">藥局取貨</div>
+                        </div>
+                        <div class="prod-text">
+                            <h5 class="name">【丹淨生活】 周公漢眠舒眠飲 (7包/盒)</h5>
+                            <p class="price">NTD 1,480</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+            </div>
+            <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="prod-content">
+                        <div class="product-pic bg"
+                            style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/G5P3R3_mid_20191104_%E6%9C%88%E8%B2%B4%E5%A6%83%E8%A6%96%E8%A6%BA.jpg);">
+                            <div class="tag">會員獨享</div>
+                        </div>
+                        <div class="prod-text">
+                            <h5 class="name">【丹淨生活】月貴妃養顏飲 (7包/盒)</h5>
+                            <p class="price">NTD 1,480</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="brand bg" style="background-image: url(./public/img/brand2.jpg);"></a>
+            </div>
+        </div>
+        <button class="lookall">看全部</button>
+    </div>
+
+    <div class="product container mt-lg-5 mt-3">
+        <h3 class="title">- 獨家套裝 -</h3>
+        <div class="row">
+            <div class="ad col-lg-3 col-6 my-lg-0 my-0_5">
+                <div class="ad-pic bg"
+                    style="background-image: url(https://cdn.pixabay.com/photo/2019/11/14/07/17/smoothie-4625476_1280.jpg);">
+                    <img src="https://cdn.pixabay.com/photo/2019/11/14/07/17/smoothie-4625476_1280.jpg" alt="">
+                </div>
+            </div>
+            <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="prod-content">
+                        <div class="product-pic bg"
+                            style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/G5P3R3_mid_20191104_%E6%9C%88%E8%B2%B4%E5%A6%83%E8%A6%96%E8%A6%BA.jpg);">
+                            <div class="tag">最新上架</div>
+                        </div>
+                        <div class="prod-text">
+                            <h5 class="name">【丹淨生活】月貴妃養顏飲 (7包/盒)</h5>
+                            <p class="price">NTD 1,480</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+            </div>
+            <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="prod-content">
+                        <div class="product-pic bg"
+                            style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/vZomnk_mid_20200130_%E5%91%A8%E5%85%AC%E6%BC%A2%E7%9C%A0%E8%A6%96%E8%A6%BA_1.png);">
+                            <div class="tag">藥局取貨</div>
+                        </div>
+                        <div class="prod-text">
+                            <h5 class="name">【丹淨生活】 周公漢眠舒眠飲 (7包/盒)</h5>
+                            <p class="price">NTD 1,480</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+            </div>
+            <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
+                <a href="#">
+                    <div class="prod-content">
+                        <div class="product-pic bg"
+                            style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/G5P3R3_mid_20191104_%E6%9C%88%E8%B2%B4%E5%A6%83%E8%A6%96%E8%A6%BA.jpg);">
+                            <div class="tag">會員獨享</div>
+                        </div>
+                        <div class="prod-text">
+                            <h5 class="name">【丹淨生活】月貴妃養顏飲 (7包/盒)</h5>
+                            <p class="price">NTD 1,480</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="brand bg" style="background-image: url(./public/img/brand2.jpg);"></a>
+            </div>
+        </div>
+        <button class="lookall">看全部</button>
+    </div>
+
+    <footer class="pt-3_5 pb-3_5 mt-lg-5 mt-3">
+        <div class="link pb-3">
+            <div class="container">
+                <ul>
+                    <li><a href="#">關於HOKLO</a></li>
+                    <li><a href="#">招商專區</a></li>
+                    <li><a href="#">FAQ常見問題</a></li>
+                    <li><a href="#">客戶服務</a></li>
+                    <li><a href="#">購物須知</a></li>
+                    <li><div class="social">
+                        <button class="rounded-circle social-box">
+                            <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                        </button>
+                        <button class="rounded-circle social-box">
+                            <a href="#"> <i class="fab fa-instagram"></i></a>
+                        </button>
+                    </div></li>
+                </ul>
+                <div class="social">
+                    <button class="rounded-circle social-box">
+                        <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                    </button>
+                    <button class="rounded-circle social-box">
+                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form class="subscribe mx-auto pt-3">
+                <p>訂閱HOKLO健康報</p>
+                <div class="data-box mt-1 flex-style">
+                    <input type="text" placeholder="稱呼">
+                    <input type="email" placeholder="電子信箱">
+                    <input type="submit" class="btn-round sub" value="訂閱">
+                </div>
+            </form>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="public/js/index.js"></script>
+</body>
+
+</html>
