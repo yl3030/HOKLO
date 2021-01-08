@@ -57,28 +57,19 @@
             <nav class="bottom-header flex-style">
                 <ul class="navbar">
                     <li>
-                        <a href="#">防疫首選</a>
-                    </li>
-                    <li>
-                        <a href="#">獨家套裝</a>
-                    </li>
-                    <li>
-                        <a href="#">窈窕必備</a>
-                    </li>
-                    <li>
-                        <a href="#">藥師激推</a>
-                    </li>
-                    <li>
-                        <a href="#">機能保健</a>
-                    </li>
-                    <li>
-                        <a href="#">發光美肌</a>
-                    </li>
-                    <li>
-                        <a href="#">安眠舒壓</a>
+                        <a href="#">HO商城</a>
                     </li>
                     <li>
                         <a href="#">品牌專區</a>
+                    </li>
+                    <li>
+                        <a href="#">實體取貨點</a>
+                    </li>
+                    <li>
+                        <a href="#">關於HOKLO</a>
+                    </li>
+                    <li>
+                        <a href="#">HO新聞</a>
                     </li>
                 </ul>
                 <div class="bh-icon">
@@ -147,28 +138,19 @@
             <nav class="menu-nav py-1 pl-0_5">
                 <ul class="border-bottom pb-1">
                     <li>
-                        <a href="#">防疫首選</a>
-                    </li>
-                    <li>
-                        <a href="#">獨家套裝</a>
-                    </li>
-                    <li>
-                        <a href="#">窈窕必備</a>
-                    </li>
-                    <li>
-                        <a href="#">藥師激推</a>
-                    </li>
-                    <li>
-                        <a href="#">機能保健</a>
-                    </li>
-                    <li>
-                        <a href="#">發光美肌</a>
-                    </li>
-                    <li>
-                        <a href="#">安眠舒壓</a>
+                        <a href="#">HO商城</a>
                     </li>
                     <li>
                         <a href="#">品牌專區</a>
+                    </li>
+                    <li>
+                        <a href="#">實體取貨點</a>
+                    </li>
+                    <li>
+                        <a href="#">關於HOKLO</a>
+                    </li>
+                    <li>
+                        <a href="#">HO新聞</a>
                     </li>
                 </ul>
                 <!-- 未登入 -->
@@ -187,11 +169,13 @@
         </div>
     </div>
 
-    <div class="brand-pic">
-        <div class="pic"></div>
-        <h3>不只帶給您新氣象<br>也帶來新台幣！</h3>
+    <div class="brand-pic" id="banner">
+        <div class="pic bg"
+            style="background-image: url(https://images.unsplash.com/photo-1607528971899-2e89e6c0ec69?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80);">
+        </div>
+        <h3>不只帶給您新氣象，也帶來新台幣！</h3>
     </div>
-    <div class="brand-introduce">
+    <div class="brand-introduce container mt-2">
         <div class="main-data">
             <img class="brand-logo" src="./public/img/brand1.jpg" alt="">
             <div class="text">
@@ -210,18 +194,259 @@
                 <a href="#"><i class="fab fa-line"></i></a>
             </button>
         </div>
-        <div class="brand-intr">
-            knit your winter n stay forever young<br>
-            獨立的純手工編織品牌，所有款式皆為獨家開發。<br>
-            非市場批發劣質品 / 非工廠模板複製品<br>
-            <br>
-            純手工編織的溫度，有別於工廠生產線的冰冷。<br>
-            請讓over the basic溫暖你每一個冬天。<br>
+        <div class="brand-intr mt-1">
+            <p>knit your winter n stay forever young</p>
+            <p>獨立的純手工編織品牌，所有款式皆為獨家開發。</p>
+            <p>非市場批發劣質品 / 非工廠模板複製品</p>
+            <p>純手工編織的溫度，有別於工廠生產線的冰冷。</p>
+            <p>請讓over the basic溫暖你每一個冬天。</p>
+        </div>
+        <div class="announce mt-1_5">
+            <h4>公告</h4>
+            <ul>
+                <li>消費後寫下評價送 NT$30 優惠券( $30優惠券限消費滿 $299使用 )</li>
+                <li>消費後寫下評價送 NT$30 優惠券( $30優惠券限消費滿 $299使用 )</li>
+            </ul>
         </div>
     </div>
 
-    <footer class="pt-3_5 pb-3_5 mt-lg-5 mt-3">
-        <div class="link pb-3">
+    <div class="modal fade" id="class-box" tabindex="-1" aria-labelledby="class-boxLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="select-class">
+                        <li class="active" data-dismiss="modal">所有商品</li>
+                        <li data-dismiss="modal">全家防護升級</li>
+                        <li data-dismiss="modal">女性保健食品</li>
+                        <li data-dismiss="modal">男性保健食品</li>
+                        <li data-dismiss="modal">銀髮保健食品</li>
+                        <li data-dismiss="modal">維他命系列</li>
+                        <li data-dismiss="modal">益生箘系列</li>
+                    </ul>
+                    <button data-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="classify col-lg-3">
+                <ul>
+                    <li class="active">所有商品</li>
+                    <li>全家防護升級</li>
+                    <li>女性保健食品</li>
+                    <li>男性保健食品</li>
+                    <li>銀髮保健食品</li>
+                    <li>維他命系列</li>
+                    <li>益生箘系列</li>
+                </ul>
+            </div>
+            <div class="md-classify col-12" data-toggle="modal" data-target="#class-box">
+                <div class="flex-style active-class">
+                    <p>所有商品</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="product col-lg-9">
+                <div class="row">
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg"
+                                    style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/G5P3R3_mid_20191104_%E6%9C%88%E8%B2%B4%E5%A6%83%E8%A6%96%E8%A6%BA.jpg);">
+                                    <div class="tag">最新上架</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">【丹淨生活】月貴妃養顏飲 (7包/盒)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg"
+                                    style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/vZomnk_mid_20200130_%E5%91%A8%E5%85%AC%E6%BC%A2%E7%9C%A0%E8%A6%96%E8%A6%BA_1.png);">
+                                    <div class="tag">藥局取貨</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">【丹淨生活】 周公漢眠舒眠飲 (7包/盒)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg"
+                                    style="background-image: url(https://elixirherbary.s3-ap-northeast-1.amazonaws.com/p/productimg/G5P3R3_mid_20191104_%E6%9C%88%E8%B2%B4%E5%A6%83%E8%A6%96%E8%A6%BA.jpg);">
+                                    <div class="tag">會員獨享</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">【丹淨生活】月貴妃養顏飲 (7包/盒)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand2.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg" style="background-image: url(./public/img/product1.png);">
+                                    <div class="tag">最新上架</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">丹淨 奔瀧甘露(50mlX30入)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg" style="background-image: url(./public/img/product2.png);">
+                                    <div class="tag">最新上架</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">丹淨 固元甘露(50mlX10入)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg" style="background-image: url(./public/img/product3.png);">
+                                    <div class="tag">藥局取貨</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">丹淨 順沁甘露(50mlX10入)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg" style="background-image: url(./public/img/product4.png);">
+                                    <div class="tag">會員獨享</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">丹淨 奔瀧甘露(50mlX10入)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand2.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg" style="background-image: url(./public/img/product5.png);">
+                                    <div class="tag">最新上架</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">丹淨 霾清甘露(50mlX10入)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg"
+                                    style="background-image: url(https://elixirherbary.s3.amazonaws.com/p/productimg/UR7=VQ_30.jpg);">
+                                    <div class="tag">最新上架</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">丹淨 養生甘露(50mlX30入)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg"
+                                    style="background-image: url(https://elixirherbary.s3.amazonaws.com/p/productimg/vmTds0_10.jpg);">
+                                    <div class="tag">藥局取貨</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">丹淨 養生甘露(50mlX10入)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg" style="background-image: url(./public/img/product6.png);">
+                                    <div class="tag">會員獨享</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">【丹淨生活】 一日皇帝飲 (50ml單入盒裝)</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand2.jpg);"></a>
+                    </div>
+                    <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
+                        <a href="#">
+                            <div class="prod-content">
+                                <div class="product-pic bg" style="background-image: url(./public/img/product7.png);">
+                                    <div class="tag">最新上架</div>
+                                </div>
+                                <div class="prod-text">
+                                    <h5 class="name">【丹淨生活】旭日MP+</h5>
+                                    <p class="price">NTD 1,480</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.jpg);"></a>
+                    </div>
+                </div>
+                <div class="pagination mt-2">
+                    <ul>
+                        <!-- <li class="prev"><a href="#">
+                            <i class="fas fa-chevron-left"></i>
+                        </a></li> -->
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="next"><a href="#">
+                                <i class="fas fa-chevron-right"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-2 pb-3_5 mt-lg-5 mt-3">
+        <div class="link pb-2">
             <div class="container">
                 <ul>
                     <li><a href="#">關於HOKLO</a></li>

@@ -54,3 +54,47 @@ $(".menu").click(function(){
 $(".menu-header").children(".back-box").click(function(){
     $(".menu-box").css("right","-100%");
 })
+
+// brand
+$(".feature").children(".select").children(".select-brand").click(function(){
+	$(this).parents(".feature").children(".select").children(".select-brand").removeClass("active");
+	$(this).addClass("active");
+	$(this).parents(".feature").children(".brand-product").hide();
+	if($(this).hasClass("sb1")){
+		$(this).parents(".feature").children(".brand-product1").css("display","flex");
+	}else if($(this).hasClass("sb2")){
+		$(this).parents(".feature").children(".brand-product2").css("display","flex");
+	}else if($(this).hasClass("sb3")){
+		$(this).parents(".feature").children(".brand-product3").css("display","flex");
+	}else if($(this).hasClass("sb4")){
+		$(this).parents(".feature").children(".brand-product4").css("display","flex");
+	}else if($(this).hasClass("sb5")){
+		$(this).parents(".feature").children(".brand-product5").css("display","flex");
+	}
+})
+$(".new").children(".select").children(".select-brand").click(function(){
+	$(this).parents(".new").children(".select").children(".select-brand").removeClass("active");
+	$(this).addClass("active");
+	$(this).parents(".new").children(".brand-product").hide();
+	if($(this).hasClass("sb1")){
+		$(this).parents(".new").children(".brand-product1").css("display","flex");
+	}else if($(this).hasClass("sb2")){
+		$(this).parents(".new").children(".brand-product2").css("display","flex");
+	}else if($(this).hasClass("sb3")){
+		$(this).parents(".new").children(".brand-product3").css("display","flex");
+	}else if($(this).hasClass("sb4")){
+		$(this).parents(".new").children(".brand-product4").css("display","flex");
+	}else if($(this).hasClass("sb5")){
+		$(this).parents(".new").children(".brand-product5").css("display","flex");
+	}
+})
+
+// classify
+$("#class-box").children(".modal-dialog").children(".modal-content").children(".modal-body").children("ul").children("li").click(function(){
+	console.log("點！");
+	$("#class-box").children(".modal-dialog").children(".modal-content").children(".modal-body").children("ul").children("li").removeClass("active");
+	$(this).addClass("active");
+	var select = $(this).text();
+	$(".active-class").children("p").empty();
+	$(".active-class").children("p").append(select);
+})
