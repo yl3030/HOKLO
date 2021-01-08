@@ -638,6 +638,9 @@ header.brand-lh nav ul li {
 }
 
 /* more-brand */
+#more-brand {
+    background-color: var(--second-color);
+}
 #more-brand .text {
     text-align: center;
     color: #4d4d4d;
@@ -673,7 +676,8 @@ header.brand-lh nav ul li {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--second-color);
+    /* background-color: var(--second-color); */
+    background-color: #fff;
     box-shadow: 0 1px 4px rgba(0,0,0,0.15);
     top: 50%;
     transform: translateY(-50%);
@@ -860,7 +864,7 @@ header.brand-lh nav ul li {
     color: #fff;
     text-align: center;
 }
-.classify ul li {
+.classify-choice ul li {
     font-size: 17px;
     cursor: pointer;
     width: 100%;
@@ -869,14 +873,14 @@ header.brand-lh nav ul li {
     margin-left: -20px;
 }
 
-.classify ul li.active {
+.classify-choice ul li.active {
     color: var(--main-color);
     font-weight: 700;
     background-color: var(--second-color);
     border-radius: 50px;
 }
 
-.classify ul li:hover {
+.classify-choice ul li:hover {
     color: var(--main-color);
     font-weight: 700;
 }
@@ -952,19 +956,20 @@ footer .link .container>.social {
     margin-top: -5px;
 }
 
-.social button {
+.social-box {
     width: 35px;
     height: 35px;
     border: 1px solid var(--btn-color);
     margin-left: 10px;
+    display: inline-block;
 }
 
-.social button:hover {
+.social-box:hover {
     background-color: var(--btn-color);
     border-color: var(--btn-color);
 }
 
-.social button:hover a i {
+.social-box:hover i {
     color: #fff;
 }
 
@@ -972,15 +977,18 @@ footer .link ul li .social {
     display: none;
 }
 
-.social button:nth-child(1) {
+.social .social-box:nth-child(1) {
     margin-left: 0;
 }
 
-.social button a i {
+.social .social-box i {
     font-size: 18px;
     color: var(--btn-color);
-    margin-top: 5px;
     text-align: center;
+    width: 35px;
+    line-height: 35px;
+    margin-left: -1px;
+    margin-top: -1px;
 }
 
 footer .subscribe {
@@ -1105,8 +1113,11 @@ footer.brand-footer .social {
     .more-brand {
         width: 100%;
     }
+    .more-brand .pic {
+        height: 120px;
+    }
     .swiper-arrow:hover {
-        background-color: var(--second-color);
+        background-color: #fff;
     }
     .swiper-arrow:hover i {
         color: var(--btn-color);
@@ -1114,8 +1125,9 @@ footer.brand-footer .social {
 
     .brand-pic .pic {
         padding-bottom: 60%;
+
     }
-    .classify {
+    .classify-choice {
         display: none;
     }
     .md-classify {
@@ -1164,6 +1176,10 @@ footer.brand-footer .social {
         display: block;
         margin: 30px auto 0;
     }
+    footer.brand-footer .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 @media screen and (max-width: 576px) {
     .select {
@@ -1174,7 +1190,7 @@ footer.brand-footer .social {
         width: 33.3333%;
     }
     .select .select-brand img {
-        width: 40px;
+        width: 50px;
     }
     .select .select-brand p {
         font-size: 14px;
@@ -1186,6 +1202,9 @@ footer.brand-footer .social {
         width: 90%;
         bottom: 20px;
         font-size: 18px;
+    }
+    .more-brand img {
+        width: 80px;
     }
 }
 
@@ -1252,13 +1271,15 @@ footer.brand-footer .social {
     .brand-introduce .main-data .text h5 {
         font-size: 14px;
     }
-    .social button {
+    .social-box {
         margin-left: 8px;
         width: 30px;
         height: 30px;
+        display: inline-block;
     }
-    .social button a i {
-        margin-top: 4px;
+    .social .social-box i {
+        width: 30px;
+        line-height: 30px;
     }
     .pagination ul li a {
         width: 30px;
@@ -1301,7 +1322,7 @@ footer.brand-footer .social {
     .more-brand {
         width: 100%;
     }
-    .classify {
+    .classify-choice {
         display: none;
     }
     .md-classify {
@@ -1343,7 +1364,7 @@ footer.brand-footer .social {
     .more-brand {
         width: 80%;
     }
-    .classify {
+    .classify-choice {
         display: block;
     }
     .md-classify {
