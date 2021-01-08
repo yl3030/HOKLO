@@ -230,13 +230,14 @@ header nav {
 }
 
 header nav ul.navbar {
-    width: 100%;
+    width: 80%;
     display: flex;
+    margin: 0 auto;
     /* width: 80%; */
 }
 
 header nav ul.navbar li {
-    width: 12.5%;
+    width: 20%;
 }
 
 header nav ul.navbar li a {
@@ -251,12 +252,21 @@ header nav ul.navbar li a:hover {
     font-weight: 700;
 }
 
+header .bottom-header .logo {
+    display: none;
+}
+
 header .bottom-header .bh-icon {
     display: none;
 }
 
 header .bottom-header .icon .icon-box {
     margin-top: 0;
+    margin-left: 10px;
+}
+
+header .bottom-header .icon .icon-box:first-child {
+    margin-left: 0;
 }
 
 header.m-header {

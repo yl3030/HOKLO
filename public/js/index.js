@@ -3,15 +3,19 @@ $(window).on("resize scroll", function () {
 	if ($(window).scrollTop() > 60) {
         $("header").children(".top-header").slideUp(100);
         $(".bottom-header").css("height","60px");
-		$(".bottom-header").children("ul").css("width", "80%");
+		$(".bottom-header").children("ul").css("width", "75%");
+		$(".bottom-header").children(".home").css("width", "10%");
+		$(".bottom-header").children(".home").children(".logo").css("width", "100%").css("height","auto").css("margin-right","0").css("display","block");
 		$(".bottom-header")
 			.children(".bh-icon")
-			.css("width", "20%")
+			.css("width", "15%")
 			.css("display", "block")
 	} else {
         $("header").children(".top-header").slideDown(100);
         $(".bottom-header").css("height","50px");
 		$(".bottom-header").children("ul").css("width", "100%");
+		$(".bottom-header").children(".home").css("width", "0");
+		$(".bottom-header").children(".logo").css("width", "0").css("display","none");
 		$(".bottom-header")
 			.children(".bh-icon")
 			.css("width", "0")
