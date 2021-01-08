@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品牌商品內頁</title>
+    <link rel="stylesheet" href="./public/css/bootstrap - hoklo.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <!-- awesomefont CDN -->
+    <script src="https://kit.fontawesome.com/69fd600045.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="l-header">
+        <div class="container top-header">
+            <img src="./public/img/hoklo_logo.png" alt="logo" class="logo">
+            <div class="search">
+                <form>
+                    <input type="text" class="border-top border-bottom border-left border-right-0 border-gray-300">
+                    <button>
+                        <img src="./public/img/search.png" alt="search" class="search">
+                    </button>
+                </form>
+            </div>
+            <div class="icon">
+                <!-- 未登入 -->
+                <!-- <div class="icon-box rounded-circle">
+                    <img src="./public/img/user.png" alt="user">
+                    <div class="user-content border border-gray-300">
+                        <ul>
+                            <li><a href="#">登入</a></li>
+                            <li><a href="#">註冊</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <!-- 已登入 -->
+                <div class="icon-box rounded-circle">
+                    <div class="user-circle rounded-circle bg"
+                        style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+                    </div>
+                    <div class="user-content border border-gray-300">
+                        <ul>
+                            <li><a href="#">會員中心</a></li>
+                            <li><a href="#">查訂單</a></li>
+                            <li><a href="#">折價券</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="icon-box rounded-circle">
+                    <img src="./public/img/cart.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="bottom-header flex-style">
+                <ul class="navbar">
+                    <li>
+                        <a href="#">防疫首選</a>
+                    </li>
+                    <li>
+                        <a href="#">獨家套裝</a>
+                    </li>
+                    <li>
+                        <a href="#">窈窕必備</a>
+                    </li>
+                    <li>
+                        <a href="#">藥師激推</a>
+                    </li>
+                    <li>
+                        <a href="#">機能保健</a>
+                    </li>
+                    <li>
+                        <a href="#">發光美肌</a>
+                    </li>
+                    <li>
+                        <a href="#">安眠舒壓</a>
+                    </li>
+                    <li>
+                        <a href="#">品牌專區</a>
+                    </li>
+                </ul>
+                <div class="bh-icon">
+                    <div class="icon">
+                        <div class="icon-box rounded-circle search-icon">
+                            <img src="./public/img/search-blue.png" alt="">
+                        </div>
+                        <!-- 未登入 -->
+                        <!-- <div class="icon-box rounded-circle">
+                    <img src="./public/img/user.png" alt="user">
+                    <div class="user-content border border-gray-300">
+                        <ul>
+                            <li><a href="#">登入</a></li>
+                            <li><a href="#">註冊</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                        <!-- 已登入 -->
+                        <div class="icon-box rounded-circle">
+                            <div class="user-circle rounded-circle bg"
+                                style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+                            </div>
+                            <div class="user-content border border-gray-300">
+                                <ul>
+                                    <li><a href="#">會員中心</a></li>
+                                    <li><a href="#">查訂單</a></li>
+                                    <li><a href="#">折價券</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon-box rounded-circle">
+                            <img src="./public/img/cart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <header class="m-header">
+        <div class="container">
+            <div class="flex-style">
+                <img src="./public/img/hoklo_logo.png" alt="logo" class="logo">
+                <div class="icon">
+                    <div class="icon-box rounded-circle search-icon">
+                        <img src="./public/img/search-blue.png" alt="">
+                    </div>
+                    <div class="icon-box rounded-circle">
+                        <img src="./public/img/cart.png" alt="">
+                    </div>
+                    <div class="icon-box rounded-circle menu">
+                        <img src="./public/img/menu.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <form id="search-box">
+        <input type="text" placeholder="請輸入關鍵字" class="border-0">
+    </form>
+    <div class="menu-box">
+        <div class="container">
+            <div class="menu-header">
+                <img src="./public/img/hoklo_logo.png" alt="logo" class="logo">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <nav class="menu-nav py-1 pl-0_5">
+                <ul class="border-bottom pb-1">
+                    <li>
+                        <a href="#">防疫首選</a>
+                    </li>
+                    <li>
+                        <a href="#">獨家套裝</a>
+                    </li>
+                    <li>
+                        <a href="#">窈窕必備</a>
+                    </li>
+                    <li>
+                        <a href="#">藥師激推</a>
+                    </li>
+                    <li>
+                        <a href="#">機能保健</a>
+                    </li>
+                    <li>
+                        <a href="#">發光美肌</a>
+                    </li>
+                    <li>
+                        <a href="#">安眠舒壓</a>
+                    </li>
+                    <li>
+                        <a href="#">品牌專區</a>
+                    </li>
+                </ul>
+                <!-- 未登入 -->
+                <div class="user-box pt-2">
+                    <img src="./public/img/user.png" alt="">
+                    <span>登入</span>
+                </div>
+                <!-- 已登入 -->
+                <!-- <div class="user-box">
+                <div class="user-circle rounded-circle bg"
+                                style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+                            </div>
+                <span>Tony Chen</span>
+            </div> -->
+            </nav>
+        </div>
+    </div>
+
+    <div class="brand-pic">
+        <div class="pic"></div>
+        <h3>不只帶給您新氣象<br>也帶來新台幣！</h3>
+    </div>
+    <div class="brand-introduce">
+        <div class="main-data">
+            <img class="brand-logo" src="./public/img/brand1.jpg" alt="">
+            <div class="text">
+                <h5>均生漢方</h5>
+                <p>商品數 | 39</p>
+            </div>
+        </div>
+        <div class="social">
+            
+        </div>
+    </div>
+
+    <footer class="pt-3_5 pb-3_5 mt-lg-5 mt-3">
+        <div class="link pb-3">
+            <div class="container">
+                <ul>
+                    <li><a href="#">關於HOKLO</a></li>
+                    <li><a href="#">招商專區</a></li>
+                    <li><a href="#">FAQ常見問題</a></li>
+                    <li><a href="#">客戶服務</a></li>
+                    <li><a href="#">購物須知</a></li>
+                    <li>
+                        <div class="social">
+                            <button class="rounded-circle social-box">
+                                <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                            </button>
+                            <button class="rounded-circle social-box">
+                                <a href="#"> <i class="fab fa-instagram"></i></a>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="social">
+                    <button class="rounded-circle social-box">
+                        <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                    </button>
+                    <button class="rounded-circle social-box">
+                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form class="subscribe mx-auto pt-3">
+                <p>訂閱HOKLO健康報</p>
+                <div class="data-box mt-1 flex-style">
+                    <input type="text" placeholder="稱呼">
+                    <input type="email" placeholder="電子信箱">
+                    <input type="submit" class="btn-round sub" value="訂閱">
+                </div>
+            </form>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="public/js/index.js"></script>
+
+</body>
+
+</html>

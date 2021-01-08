@@ -59,8 +59,9 @@ ul {
     margin-bottom: 30px;
 }
 
+/* button */
 .lookall {
-    width: 80px;
+    width: 100px;
     height: 40px;
     background-color: var(--btn-color);
     color: #fff;
@@ -84,6 +85,20 @@ ul {
 
 .btn-round:hover {
     background-color: var(--btn-hover-color);
+}
+
+.btn-border-rounded {
+    border-radius: 8px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    width: 120px;
+    height: 40px;
+}
+
+.btn-border-rounded:hover {
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    color: #fff;
 }
 
 /* header */
@@ -257,8 +272,23 @@ header#m-header .icon .icon-box {
     margin-top: 12px;
 }
 
-/* search */
+header.brand-lh {
+    height: 60px;
+}
 
+header.brand-lh nav {
+    display: inline-block;
+    width: auto;
+    margin-left: 20px;
+    line-height: 60px;
+}
+
+header.brand-lh nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* search */
 #search-box {
     width: 100%;
     height: 50px;
@@ -297,7 +327,6 @@ header#m-header .icon .icon-box {
 }
 
 /* menu */
-
 .menu-box {
     width: 100%;
     height: 100%;
@@ -318,12 +347,17 @@ header#m-header .icon .icon-box {
     margin-top: 8px;
 }
 
-.menu-box .menu-header i {
+.menu-box .menu-header .back-box {
     display: inline-block;
-    font-size: 20px;
-    color: var(--fifth-color);
     float: right;
     margin-top: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.menu-box .menu-header i {
+    font-size: 20px;
+    color: var(--fifth-color);
 }
 
 .menu-box .menu-nav li {
@@ -348,9 +382,12 @@ header#m-header .icon .icon-box {
 }
 
 /* banner */
-
 #banner {
     margin-top: 126px;
+}
+
+#banner.brand-banner {
+    margin-top: 60px;
 }
 
 #banner .carousel-inner .carousel-item {
@@ -462,6 +499,19 @@ header#m-header .icon .icon-box {
 
 .product .product-box .prod-content {
     width: 100%;
+    margin-top: 30px;
+}
+
+.product .product-box .prod-content:hover .product-pic {
+    opacity: 0.8;
+}
+
+.product .product-box .prod-content:hover .prod-text h5  {
+    color: #5c5c5c;
+}
+
+.product .product-box .prod-content:hover .prod-text .price  {
+    color: #5c5c5c;
 }
 
 .product .product-box .prod-content .product-pic {
@@ -469,6 +519,7 @@ header#m-header .icon .icon-box {
     height: 0;
     padding-bottom: 70%;
     position: relative;
+    transition: 0.3s;
 }
 
 .product .product-box .prod-content .product-pic .tag {
@@ -482,19 +533,24 @@ header#m-header .icon .icon-box {
     border-radius: 8px 0;
 }
 
+.product .product-box .prod-content .prod-text {
+    margin-top: 8px;
+}
+
 .product .product-box .prod-content .prod-text .name {
     font-size: 18px;
     font-weight: 700;
     color: #333333;
+    transition: 0.3s;
 }
 
 .product .product-box .prod-content .prod-text .price {
     font-size: 16px;
     color: var(--third-color);
+    transition: 0.3s;
 }
 
 /* video */
-
 .video .v-box {
     width: 100%;
     height: 0;
@@ -510,8 +566,62 @@ header#m-header .icon .icon-box {
     left: 0;
 }
 
-/* footer */
+/* 品牌 */
+.select .select-brand {
+    width: 15%;
+    cursor: pointer;
+}
 
+.select .select-brand img {
+    display: block;
+    width: 60px;
+    margin: 0 auto 8px;
+}
+
+.select .select-brand p {
+    text-align: center;
+}
+
+.brand-product2, .brand-product3, .brand-product4, .brand-product5 {
+    display: none;
+}
+
+/* introduce */
+.introduce {
+    background-color: var(--second-color);
+}
+
+.introduce .text h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--third-color);
+}
+
+.introduce .text p {
+    color: #4d4d4d;
+}
+
+.introduce button {
+    margin-top: 30px;
+}
+
+/* more-brand */
+.more-brand {
+    /* background-color: var(--second-color); */
+}
+
+.more-brand .text {
+    text-align: center;
+    color: #4d4d4d;
+}
+
+#more-brand .pic-box img {
+    width: 100px;
+}
+
+
+
+/* footer */
 footer {
     background-color: var(--second-color);
 }
@@ -534,17 +644,30 @@ footer .link ul li a {
     font-weight: 700;
 }
 
+footer .link ul li a:hover {
+    color: var(--main-color);
+}
+
 footer .link .container>.social {
     display: inline-block;
     float: right;
     margin-top: -5px;
 }
 
-footer .link .social button {
+footer .social button {
     width: 35px;
     height: 35px;
     border: 1px solid var(--btn-color);
     margin-left: 10px;
+}
+
+footer .social button:hover {
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+}
+
+footer .social button:hover a i {
+    color: #fff;
 }
 
 footer .link ul li .social {
@@ -555,10 +678,11 @@ footer .link ul li .social button:nth-child(1) {
     margin-left: 0;
 }
 
-footer .link .social button a i {
+footer .social button a i {
     font-size: 18px;
     color: var(--btn-color);
     margin-top: 5px;
+    text-align: center;
 }
 
 footer .subscribe {
@@ -619,6 +743,29 @@ footer .subscribe .data-box input.sub {
 
 footer .subscribe .data-box input.sub:hover {
     background-color: var(--btn-hover-color);
+}
+
+footer.brand-footer ul li{
+    margin-top: 10px;
+}
+
+footer.brand-footer ul li a {
+    text-align: center;
+    display: block;
+}
+
+footer.brand-footer .pic img {
+    width: 100%;
+}
+
+footer.brand-footer .social {
+    text-align: center;
+}
+
+#copy-right {
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {

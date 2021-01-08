@@ -47,6 +47,6 @@ $(document).click(function (event) {
 $(".menu").click(function(){
     $(".menu-box").css("right","0");
 })
-$(".menu-header").children("i").click(function(){
+$(".menu-header").children(".back-box").click(function(){
     $(".menu-box").css("right","-100%");
 })
