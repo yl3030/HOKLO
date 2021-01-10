@@ -908,7 +908,11 @@ header.brand-lh nav ul li a:hover {
     font-weight: 700;
 }
 
-#class-box button {
+#class-box i {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
     position: absolute;
     width: 35px;
     height: 35px;
@@ -917,12 +921,6 @@ header.brand-lh nav ul li a:hover {
     top: -10px;
     right: -10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-}
-
-#class-box button i {
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
 }
 
 .classify-choice ul li {
