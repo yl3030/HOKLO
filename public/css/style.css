@@ -536,6 +536,14 @@ header.home-header .class-header ul li:hover a {
     text-align: center;
 }
 
+.menu-box .classify .c-box img {
+    width: 30px;
+}
+
+.menu-box .classify .c-box h5 {
+    font-size: 14px;
+}
+
 /* 廣告(兩欄) */
 
 .advertising {
@@ -1193,6 +1201,9 @@ footer.brand-footer .social {
     header.l-header {
         display: none;
     }
+    header.home-header {
+        display: none;
+    }
     header.m-header {
         display: block;
     }
@@ -1407,6 +1418,9 @@ footer.brand-footer .social {
     header.l-header {
         display: none;
     }
+    header.home-header {
+        display: none;
+    }
     header.m-header {
         display: block;
     }
@@ -1443,6 +1457,9 @@ footer.brand-footer .social {
 
 @media screen and (min-width: 1024px) {
     header.l-header {
+        display: block;
+    }
+    header.home-header {
         display: block;
     }
     header.m-header {
