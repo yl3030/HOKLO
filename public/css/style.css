@@ -169,6 +169,7 @@ header .icon {
 
 header .icon .icon-box {
     display: inline-block;
+    vertical-align: middle;
     margin-left: 15px;
     position: relative;
     width: 36px;
@@ -473,7 +474,7 @@ header.home-header .class-header ul li:hover a {
 
 /* banner */
 #banner {
-    margin-top: 126px;
+    margin-top: 110px;
 }
 
 #banner.brand-banner {
@@ -1469,7 +1470,7 @@ footer.brand-footer .social {
         background-color: rgb(245, 245, 245);
     }
     #banner {
-        margin-top: 126px;
+        margin-top: 110px;
     }
     .classify .c-box img {
         width: 50px;

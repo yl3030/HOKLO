@@ -21,7 +21,7 @@ $(window).on("resize scroll", function () {
 			.css("width", "0")
 			.css("display", "none");
 	}
-	var cH = 60 + $(".carousel-item").width()*0.4 + $(".classify").height() + 80;
+	var cH = $(".carousel-item").width()*0.4 + $(".classify").height() + 20;
 	console.log("cH=" + cH);
 	console.log($(window).scrollTop());
 	if ($(window).scrollTop() > cH) {
