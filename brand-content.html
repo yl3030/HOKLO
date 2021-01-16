@@ -26,28 +26,28 @@
             </div>
             <div class="icon">
                 <!-- 未登入 -->
-                <!-- <div class="icon-box rounded-circle">
+                <div class="icon-box rounded-circle">
                     <img src="./public/img/user.png" alt="user">
-                    <div class="user-content border border-gray-300">
-                        <ul>
+                    <div class="user-content">
+                        <ul class="border border-gray-300">
                             <li><a href="#">登入</a></li>
                             <li><a href="#">註冊</a></li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
                 <!-- 已登入 -->
-                <div class="icon-box rounded-circle">
+                <!-- <div class="icon-box rounded-circle">
                     <div class="user-circle rounded-circle bg"
                         style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
                     </div>
-                    <div class="user-content border border-gray-300">
-                        <ul>
+                    <div class="user-content">
+                        <ul class="border border-gray-300">
                             <li><a href="#">會員中心</a></li>
                             <li><a href="#">查訂單</a></li>
                             <li><a href="#">折價券</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <div class="icon-box rounded-circle">
                     <img src="./public/img/cart.png" alt="">
                 </div>
@@ -56,6 +56,20 @@
         <div class="container">
             <nav class="bottom-header flex-style">
                 <ul class="navbar">
+                    <li class="nav-menu">
+                        <img src="./public/img/menu.png" alt="">
+                        <span>全站商品分類</span>
+                        <div class="class-menu">
+                            <ul>
+                                <li>全家防護升級</li>
+                                <li>女性保健食品</li>
+                                <li>男性保健食品</li>
+                                <li>銀髮保健食品</li>
+                                <li>維他命系列</li>
+                                <li>益生箘系列</li>
+                            </ul>
+                        </div>
+                    </li>
                     <li>
                         <a href="#">HO商城</a>
                     </li>
@@ -80,8 +94,8 @@
                         <!-- 未登入 -->
                         <!-- <div class="icon-box rounded-circle">
                     <img src="./public/img/user.png" alt="user">
-                    <div class="user-content border border-gray-300">
-                        <ul>
+                    <div class="user-content">
+                        <ul class="border border-gray-300">
                             <li><a href="#">登入</a></li>
                             <li><a href="#">註冊</a></li>
                         </ul>
@@ -92,8 +106,8 @@
                             <div class="user-circle rounded-circle bg"
                                 style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
                             </div>
-                            <div class="user-content border border-gray-300">
-                                <ul>
+                            <div class="user-content">
+                                <ul class="border border-gray-300">
                                     <li><a href="#">會員中心</a></li>
                                     <li><a href="#">查訂單</a></li>
                                     <li><a href="#">折價券</a></li>
@@ -156,26 +170,62 @@
                     </li>
                 </ul>
                 <!-- 未登入 -->
-                <div class="user-box pt-2">
+                <!-- <div class="user-box pt-2">
                     <img src="./public/img/user.png" alt="">
                     <span>登入</span>
-                </div>
+                </div> -->
                 <!-- 已登入 -->
-                <!-- <div class="user-box">
-                <div class="user-circle rounded-circle bg"
-                                style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
-                            </div>
-                <span>Tony Chen</span>
-            </div> -->
+                <div class="user-box pt-2">
+                    <div class="user-circle rounded-circle bg"
+                        style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+                    </div>
+                    <span>Tony Chen</span>
+                </div>
             </nav>
         </div>
     </div>
 
-    <div class="brand-pic" id="banner">
+    <!-- <div class="brand-pic" id="banner">
         <div class="pic bg"
             style="background-image: url(https://images.unsplash.com/photo-1607528971899-2e89e6c0ec69?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80);">
         </div>
         <h3>不只帶給您新氣象，也帶來新台幣！</h3>
+    </div> -->
+    <div id="banner" class="carousel slide brand-pic" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#banner" data-slide-to="0" class="active"></li>
+            <li data-target="#banner" data-slide-to="1"></li>
+            <li data-target="#banner" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active bg"
+                style="background-image: url(https://images.unsplash.com/photo-1607528971899-2e89e6c0ec69?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80);">
+                <img src="https://images.unsplash.com/photo-1607528971899-2e89e6c0ec69?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"
+                    class="d-block w-100" alt="...">
+                    <h3>不只帶給您新氣象，也帶來新台幣！</h3>
+            </div>
+            <div class="carousel-item bg"
+                style="background-image: url(https://cdn.pixabay.com/photo/2020/07/12/13/10/traditional-chinese-medicine-5397194_1280.jpg);">
+                <img src="https://cdn.pixabay.com/photo/2020/07/12/13/10/traditional-chinese-medicine-5397194_1280.jpg"
+                    class="d-block w-100" alt="...">
+                    <h3>不只帶給您新氣象，也帶來新台幣！</h3>
+            </div>
+            <div class="carousel-item bg"
+                style="background-image: url(https://cdn.pixabay.com/photo/2016/11/18/18/11/asparagus-1836178_1280.jpg);">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/18/11/asparagus-1836178_1280.jpg"
+                    class="d-block w-100" alt="...">
+                    <h3>不只帶給您新氣象，也帶來新台幣！</h3>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#banner" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon arrow" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#banner" role="button" data-slide="next">
+            <span class="carousel-control-next-icon arrow" aria-hidden="true"><i
+                    class="fas fa-chevron-right"></i></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
     <div class="brand-introduce container mt-2">
         <div class="main-data">
@@ -185,11 +235,11 @@
                 <p>商品數 | 39</p>
             </div>
         </div>
-        <div class="social">
+        <!-- <div class="social">
             <a href="#" class="rounded-circle social-box"> <i class="fab fa-facebook-f"></i></a>
             <a href="#" class="rounded-circle social-box"> <i class="fab fa-instagram"></i></a>
             <a href="#" class="rounded-circle social-box"><i class="fab fa-line"></i></a>
-        </div>
+        </div> -->
         <div class="brand-intr mt-1">
             <p>knit your winter n stay forever young</p>
             <p>獨立的純手工編織品牌，所有款式皆為獨家開發。</p>
@@ -259,7 +309,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand9.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -274,7 +323,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand10.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -289,7 +337,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand11.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -303,7 +350,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand12.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -317,7 +363,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand13.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -331,7 +376,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand14.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -345,7 +389,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand15.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -359,7 +402,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand1.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -374,7 +416,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand2.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -389,7 +430,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand3.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -403,7 +443,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand4.png" class="brand" alt=""></a>
                     </div>
                     <div class="product-box col-lg-4 col-6 my-lg-0 my-0_5">
                         <a href="#">
@@ -417,7 +456,6 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#"><img src="./public/img/brand5.png" class="brand" alt=""></a>
                     </div>
                 </div>
                 <div class="pagination mt-2">

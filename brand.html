@@ -32,28 +32,28 @@
                     <img src="./public/img/search-blue.png" alt="">
                 </div>
                 <!-- 未登入 -->
-                <div class="icon-box rounded-circle">
+                <!-- <div class="icon-box rounded-circle">
                     <img src="./public/img/user.png" alt="user">
-                    <div class="user-content border border-gray-300">
-                        <ul>
+                    <div class="user-content">
+                        <ul class="border border-gray-300">
                             <li><a href="#">登入</a></li>
                             <li><a href="#">註冊</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <!-- 已登入 -->
-                <!-- <div class="icon-box rounded-circle">
+                <div class="icon-box rounded-circle">
                     <div class="user-circle rounded-circle bg"
                         style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
                     </div>
-                    <div class="user-content border border-gray-300">
-                        <ul>
+                    <div class="user-content">
+                        <ul class="border border-gray-300">
                             <li><a href="#">會員中心</a></li>
                             <li><a href="#">查訂單</a></li>
                             <li><a href="#">折價券</a></li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </header>
@@ -99,17 +99,17 @@
                     </li>
                 </ul>
                 <!-- 未登入 -->
-                <div class="user-box pt-2">
+                <!-- <div class="user-box pt-2">
                     <img src="./public/img/user.png" alt="">
                     <span>登入</span>
-                </div>
+                </div> -->
                 <!-- 已登入 -->
-                <!-- <div class="user-box">
-                <div class="user-circle rounded-circle bg"
-                                style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
-                            </div>
-                <span>Tony Chen</span>
-            </div> -->
+                <div class="user-box pt-2">
+                    <div class="user-circle rounded-circle bg"
+                        style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+                    </div>
+                    <span>Tony Chen</span>
+                </div>
             </nav>
         </div>
     </div>
@@ -152,28 +152,38 @@
     <div class="feature product container mt-lg-5 mt-3">
         <h3 class="title">- 精選品牌 -</h3>
         <div class="select flex-style mb-lg-2 mb-0 mx-auto">
-            <div class="select-brand sb1 active">
+            <div class="select-brand sb1">
+                <a href="#">
                 <img src="./public/img/brand1.png" alt="">
                 <p>均生漢方</p>
+            </a>
             </div>
             <div class="select-brand sb2">
+                <a href="#">
                 <img src="./public/img/brand2.png" alt="">
                 <p>大岩生醫</p>
+            </a>
             </div>
             <div class="select-brand sb3">
+                <a href="#">
                 <img src="./public/img/brand3.png" alt="">
                 <p>亞尼活力</p>
+            </a>
             </div>
             <div class="select-brand sb4">
+                <a href="#">
                 <img src="./public/img/brand4.png" alt="">
                 <p>白蘭氏</p>
+            </a>
             </div>
             <div class="select-brand sb5">
+                <a href="#">
                 <img src="./public/img/brand5.png" alt="">
                 <p>船井生醫</p>
+            </a>
             </div>
         </div>
-        <div class="brand-product brand-product1 row">
+        <!-- <div class="brand-product brand-product1 row">
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
                     <div class="prod-content">
@@ -187,7 +197,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand1.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand4.png" alt="">
+                    <span>白蘭氏</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -202,7 +215,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand1.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand5.png" alt="">
+                    <span>船井生醫</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -217,7 +233,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand1.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand6.png" alt="">
+                    <span>雀巢</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -232,7 +251,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand1.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand7.png" alt="">
+                    <span>山田養蜂場</span>
+                </a>
             </div>
         </div>
         <div class="brand-product brand-product2 row">
@@ -248,7 +270,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand2.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand8.png" alt="">
+                    <span>補體素</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -262,7 +287,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand2.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand9.png" alt="">
+                    <span>昂萃</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -276,7 +304,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand2.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand3.png" alt="">
+                    <span>亞尼活力</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -290,7 +321,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand2.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand2.png" alt="">
+                    <span>大研生醫</span>
+                </a>
             </div>
         </div>
         <div class="brand-product brand-product3 row">
@@ -306,7 +340,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand3.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand1.png" alt="">
+                    <span>均升漢方</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -321,7 +358,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand3.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand2.png" alt="">
+                    <span>大研生醫</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -336,7 +376,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand3.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand3.png" alt="">
+                    <span>亞尼活力</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -350,7 +393,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand3.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand7.png" alt="">
+                    <span>山田養蜂場</span>
+                </a>
             </div>
         </div>
         <div class="brand-product brand-product4 row">
@@ -366,7 +412,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand4.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand8.png" alt="">
+                    <span>補體素</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -381,7 +430,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand4.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand9.png" alt="">
+                    <span>昂萃</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -396,7 +448,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand4.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand4.png" alt="">
+                    <span>白蘭氏</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -411,7 +466,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand4.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand5.png" alt="">
+                    <span>船井生醫</span>
+                </a>
             </div>
         </div>
         <div class="brand-product brand-product5 row">
@@ -428,7 +486,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand5.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand6.png" alt="">
+                    <span>雀巢</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -442,7 +503,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand5.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand5.png" alt="">
+                    <span>船井生醫</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -456,7 +520,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand5.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand4.png" alt="">
+                    <span>白蘭氏</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -470,12 +537,15 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand5.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand9.png" alt="">
+                    <span>昂萃</span>
+                </a>
             </div>
-        </div>
+        </div> -->
     </div>
 
-    <div class="introduce w-100 py-lg-3_5 py-3 mt-lg-5 mt-3">
+    <!-- <div class="introduce w-100 py-lg-3_5 py-3 mt-lg-5 mt-3">
         <div class="container">
             <div class="row">
                 <div class="text col-lg-8 col-md-8 col-12">
@@ -489,11 +559,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="new product container mt-lg-5 mt-3">
         <h3 class="title">- 最新加入品牌 -</h3>
-        <div class="select flex-style mb-lg-2 mb-0 mx-auto">
+        <!-- <div class="select flex-style mb-lg-2 mb-0 mx-auto">
             <div class="select-brand sb1 brand active">
                 <img src="./public/img/brand1.png" alt="">
                 <p>均生漢方</p>
@@ -514,8 +584,8 @@
                 <img src="./public/img/brand5.png" alt="">
                 <p>船井生醫</p>
             </div>
-        </div>
-        <div class="brand-product brand-product1 row">
+        </div> -->
+        <div class="brand-product row my-1">
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
                     <div class="prod-content">
@@ -529,7 +599,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand1.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand1.png" alt="">
+                    <span>均生漢方</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -544,7 +617,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand1.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand1.png" alt="">
+                    <span>均生漢方</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -559,7 +635,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand1.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand1.png" alt="">
+                    <span>均生漢方</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -574,10 +653,13 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand1.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand1.png" alt="">
+                    <span>均生漢方</span>
+                </a>
             </div>
         </div>
-        <div class="brand-product brand-product2 row">
+        <div class="brand-product row my-1">
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
                     <div class="prod-content">
@@ -590,7 +672,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand2.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand8.png" alt="">
+                    <span>補體素</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -604,7 +689,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand2.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand8.png" alt="">
+                    <span>補體素</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -618,7 +706,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand2.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand8.png" alt="">
+                    <span>補體素</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -632,10 +723,13 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand2.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand8.png" alt="">
+                    <span>補體素</span>
+                </a>
             </div>
         </div>
-        <div class="brand-product brand-product3 row">
+        <div class="brand-product row my-1">
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
                     <div class="prod-content">
@@ -648,7 +742,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand3.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand2.png" alt="">
+                    <span>大研生醫</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -663,7 +760,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand3.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand2.png" alt="">
+                    <span>大研生醫</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -678,7 +778,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand3.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand2.png" alt="">
+                    <span>大研生醫</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -692,10 +795,13 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand3.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand2.png" alt="">
+                    <span>大研生醫</span>
+                </a>
             </div>
         </div>
-        <div class="brand-product brand-product4 row">
+        <div class="brand-product row my-1">
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
                     <div class="prod-content">
@@ -708,7 +814,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand4.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand9.png" alt="">
+                    <span>昂萃</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -723,7 +832,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand4.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand9.png" alt="">
+                    <span>昂萃</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -738,7 +850,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand4.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand9.png" alt="">
+                    <span>昂萃</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -753,10 +868,13 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand4.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand9.png" alt="">
+                    <span>昂萃</span>
+                </a>
             </div>
         </div>
-        <div class="brand-product brand-product5 row">
+        <div class="brand-product row my-1">
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
                     <div class="prod-content">
@@ -770,7 +888,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand5.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand6.png" alt="">
+                    <span>雀巢</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -784,7 +905,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand5.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand6.png" alt="">
+                    <span>雀巢</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -798,7 +922,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand5.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand6.png" alt="">
+                    <span>雀巢</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -812,12 +939,15 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand5.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand6.png" alt="">
+                    <span>雀巢</span>
+                </a>
             </div>
         </div>
     </div>
 
-    <div id="more-brand" class="w-100 py-lg-3_5 py-3 mt-lg-5 mt-3">
+    <!-- <div id="more-brand" class="w-100 py-lg-3_5 py-3 mt-lg-5 mt-3">
         <div class="container">
             <h3 class="title">- 更多品牌 -</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -881,9 +1011,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Add Pagination -->
-                <!-- <div class="swiper-pagination banner-sp"></div> -->
-                <!-- 箭頭 -->
                 <div class="Rprev brand-rp swiper-arrow">
                     <i class="fas fa-chevron-left"></i>
                 </div>
@@ -892,9 +1019,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="product mt-lg-5 mt-3">
+    <!-- <div class="product mt-lg-5 mt-3">
         <h3 class="title">- 更多品牌商品 -</h3>
         <div class="container">
             <div class="row">
@@ -1017,9 +1144,9 @@
             </div>
         </div>
         <button class="lookall" style="width: 120px;">看所有產品</button>
-    </div>
+    </div> -->
 
-    <div class="introduce w-100 py-lg-3_5 py-3 mt-lg-5 mt-3">
+    <!-- <div class="introduce w-100 py-lg-3_5 py-3 mt-lg-5 mt-3">
         <div class="container">
             <div class="row">
                 <div class="text col-lg-8 col-md-8 col-12">
@@ -1033,7 +1160,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <footer class="brand-footer py-3" style="background-color:#fff">
         <div class="container">

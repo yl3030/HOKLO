@@ -13,9 +13,10 @@
 </head>
 
 <body>
-    <header class="l-header">
+    <!-- <?php include("header.php"); ?> -->
+    <header class="home-header">
         <div class="container top-header">
-            <a href="#"><img src="./public/img/hoklo_logo.png" alt="logo" class="logo"></a>
+            <img src="./public/img/hoklo_logo.png" alt="logo" class="logo">
             <div class="search">
                 <form>
                     <input type="text" class="border-top border-bottom border-left border-right-0 border-gray-300">
@@ -26,28 +27,28 @@
             </div>
             <div class="icon">
                 <!-- 未登入 -->
-                <!-- <div class="icon-box rounded-circle">
+                <div class="icon-box rounded-circle">
                     <img src="./public/img/user.png" alt="user">
-                    <div class="user-content border border-gray-300">
-                        <ul>
+                    <div class="user-content">
+                        <ul class="border border-gray-300">
                             <li><a href="#">登入</a></li>
                             <li><a href="#">註冊</a></li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
                 <!-- 已登入 -->
-                <div class="icon-box rounded-circle">
+                <!-- <div class="icon-box rounded-circle">
                     <div class="user-circle rounded-circle bg"
                         style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
                     </div>
-                    <div class="user-content border border-gray-300">
-                        <ul>
+                    <div class="user-content">
+                        <ul class="border border-gray-300">
                             <li><a href="#">會員中心</a></li>
                             <li><a href="#">查訂單</a></li>
                             <li><a href="#">折價券</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <div class="icon-box rounded-circle">
                     <img src="./public/img/cart.png" alt="">
                 </div>
@@ -55,8 +56,21 @@
         </div>
         <div class="container">
             <nav class="bottom-header flex-style">
-                <a href="index.html" class="home"><img src="./public/img/hoklo_logo.png" alt="" class="logo"></a>
                 <ul class="navbar">
+                    <li class="nav-menu">
+                        <img src="./public/img/menu.png" alt="">
+                        <span>全站商品分類</span>
+                        <div class="class-menu">
+                            <ul>
+                                <li>全家防護升級</li>
+                                <li>女性保健食品</li>
+                                <li>男性保健食品</li>
+                                <li>銀髮保健食品</li>
+                                <li>維他命系列</li>
+                                <li>益生箘系列</li>
+                            </ul>
+                        </div>
+                    </li>
                     <li>
                         <a href="#">HO商城</a>
                     </li>
@@ -81,8 +95,8 @@
                         <!-- 未登入 -->
                         <!-- <div class="icon-box rounded-circle">
                     <img src="./public/img/user.png" alt="user">
-                    <div class="user-content border border-gray-300">
-                        <ul>
+                    <div class="user-content">
+                        <ul class="border border-gray-300">
                             <li><a href="#">登入</a></li>
                             <li><a href="#">註冊</a></li>
                         </ul>
@@ -93,8 +107,8 @@
                             <div class="user-circle rounded-circle bg"
                                 style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
                             </div>
-                            <div class="user-content border border-gray-300">
-                                <ul>
+                            <div class="user-content">
+                                <ul class="border border-gray-300">
                                     <li><a href="#">會員中心</a></li>
                                     <li><a href="#">查訂單</a></li>
                                     <li><a href="#">折價券</a></li>
@@ -107,8 +121,24 @@
                     </div>
                 </div>
             </nav>
+            <nav class="class-header">
+                <ul class="flex-style">
+                    <li><a href="./index.html">
+                    <img src="./public/img/hoklo_logo.png" alt=""></a></li>
+                    <li><a href="#">免運直送</a></li>
+                    <li><a href="#">聰明取貨</a></li>
+                    <li><a href="#">防疫首選</a></li>
+                    <li><a href="#">藥師激推</a></li>
+                    <li><a href="#">限時搶購</a></li>
+                    <li><a href="#">新品上架</a></li>
+                    <li><a href="#">館長推薦</a></li>
+                    <li><a href="#">HOKLO獨家</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
+
     <header class="m-header">
         <div class="container">
             <div class="flex-style">
@@ -157,17 +187,17 @@
                     </li>
                 </ul>
                 <!-- 未登入 -->
-                <div class="user-box pt-2">
+                <!-- <div class="user-box pt-2">
                     <img src="./public/img/user.png" alt="">
                     <span>登入</span>
-                </div>
+                </div> -->
                 <!-- 已登入 -->
-                <!-- <div class="user-box">
-                <div class="user-circle rounded-circle bg"
-                                style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
-                            </div>
-                <span>Tony Chen</span>
-            </div> -->
+                <div class="user-box pt-2">
+                    <div class="user-circle rounded-circle bg"
+                        style="background-image: url(https://images.unsplash.com/photo-1494708001911-679f5d15a946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+                    </div>
+                    <span>Tony Chen</span>
+                </div>
             </nav>
         </div>
     </div>
@@ -356,7 +386,10 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#"><img src="./public/img/brand1.png" class="brand" alt=""></a>
+                    <a href="#" class="brand">
+                        <img src="./public/img/brand1.png" alt="">
+                        <span>均升漢方</span>
+                    </a>
                 </div>
                 <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                     <a href="#">
@@ -371,7 +404,10 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#"><img src="./public/img/brand2.png" class="brand" alt=""></a>
+                    <a href="#" class="brand">
+                        <img src="./public/img/brand2.png" alt="">
+                        <span>大研生醫</span>
+                    </a>
                 </div>
                 <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                     <a href="#">
@@ -386,30 +422,54 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#"><img src="./public/img/brand3.png" class="brand" alt=""></a>
+                    <a href="#" class="brand">
+                        <img src="./public/img/brand3.png" alt="">
+                        <span>亞尼活力</span>
+                    </a>
                 </div>
             </div>
         </div>
         <button class="lookall">看全部</button>
     </div>
 
-    <div class="video container mt-lg-5 mt-3">
+    <div class="video mt-lg-5 mt-3 py-lg-3_5 py-3">
         <h3 class="title">- 看影片更好買 -</h3>
-        <div class="v-box">
-            <iframe src="https://www.youtube.com/embed/YW2500_G6Io" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 px-0_5">
+                <div class="v-box">
+                    <iframe src="https://www.youtube.com/embed/YW2500_G6Io" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-3 px-0_5">
+                <div class="v-box">
+                    <iframe src="https://www.youtube.com/embed/Zfa_kBIHR_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-3 px-0_5">
+                <div class="v-box">
+                    <iframe src="https://www.youtube.com/embed/h2KVHeU217s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-3 px-0_5">
+                <div class="v-box">
+                    <iframe src="https://www.youtube.com/embed/_pTVJvwvZWs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 
-    <div class="advertising mt-lg-5 mt-3 py-lg-3_5 py-3">
+    <!-- <div class="advertising mt-lg-5 mt-3 py-lg-3_5 py-3">
         <div class="container">
             <h3 class="title">- 館長推薦 -</h3>
             <div class="ad"
                 style="background-image: url(https://cdn.pixabay.com/photo/2018/12/07/00/19/savoy-3860933_1280.jpg);">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="product container mt-lg-5 mt-3">
         <h3 class="title">- 防疫首選 -</h3>
@@ -433,7 +493,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand13.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand7.png" alt="">
+                    <span>山田養蜂場</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -448,7 +511,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand14.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand8.png" alt="">
+                    <span>補體素</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -463,7 +529,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand15.png" class="brand" alt=""></a>
+                <a href="#" class="brand">
+                    <img src="./public/img/brand9.png" alt="">
+                    <span>昂萃</span>
+                </a>
             </div>
         </div>
         <button class="lookall">看全部</button>
@@ -491,8 +560,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand12.png" class="brand" alt=""></a>
-                <!-- <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.png);"></a> -->
+                <a href="#" class="brand">
+                    <img src="./public/img/brand4.png" alt="">
+                    <span>白蘭氏</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -507,8 +578,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand11.png" class="brand" alt=""></a>
-                <!-- <a href="#" class="brand bg" style="background-image: url(./public/img/brand1.png);"></a> -->
+                <a href="#" class="brand">
+                    <img src="./public/img/brand5.png" alt="">
+                    <span>船井生醫</span>
+                </a>
             </div>
             <div class="product-box col-lg-3 col-6 my-lg-0 my-0_5">
                 <a href="#">
@@ -523,8 +596,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="#"><img src="./public/img/brand10.png" class="brand" alt=""></a>
-                <!-- <a href="#" class="brand bg" style="background-image: url(./public/img/brand2.png);"></a> -->
+                <a href="#" class="brand">
+                    <img src="./public/img/brand6.png" alt="">
+                    <span>雀巢</span>
+                </a>
             </div>
         </div>
         <button class="lookall">看全部</button>
