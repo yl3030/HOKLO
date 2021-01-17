@@ -363,6 +363,15 @@ header.home-header .class-header ul {
     width: 100%;
 }
 
+header.home-header .class-header ul li {
+    width: 11.1111%;
+}
+
+header.home-header .class-header ul li a {
+    display: block;
+    width: 100%;
+}
+
 header.home-header .class-header ul li:hover a {
     color: var(--main-color);
     font-weight: 700;
