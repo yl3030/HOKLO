@@ -623,6 +623,11 @@ header.home-header .class-header ul li:hover a {
 
 .product .product-box .brand:hover {
     opacity: 0.8;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    font-weight: 700;
+    /* border-color:  #D9D9D9; */
+    border-color:  var(--sixth-color);
 }
 
 .product .product-box .prod-content {
