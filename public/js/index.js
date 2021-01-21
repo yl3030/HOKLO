@@ -121,3 +121,40 @@ $(document).click(function (event) {
 		$(".class-menu").slideUp(200);
 	}
 });
+
+// buy num
+$(".fa-minus").click(function(){
+	var buyNum = $(this).parents(".p-num").children("input").val();
+	var clickNum;
+	if (buyNum == 0 || buyNum < 0) {
+		clickNum = 0;
+	} else if (buyNum == "") {
+		clickNum = 0;
+	} else {
+		clickNum = parseInt(buyNum) - 1;
+	}
+	$(this).parents(".p-num").children("input").val(clickNum);
+})
+$(".fa-plus").click(function(){
+	var buyNum = $(this).parents(".p-num").children("input").val();
+	var clickNum;
+	if (buyNum < 0) {
+		clickNum = 0;
+	} else if (buyNum == "") {
+		clickNum = 0;
+	} else {
+		clickNum = parseInt(buyNum) + 1;
+	}
+	$(this).parents(".p-num").children("input").val(clickNum);
+})
+
+// addtocart
+$(".addtocart").click(function(){
+	var buyNum = $(this).parents(".product-intr").children(".p-num").children("input").val();
+	if(buyNum>0) {
+		$(".success").fadeIn(300);
+	}else {
+		$(".fail").fadeIn(300);
+	}
+	$(".add-alert").delay(1000).fadeOut(300);
+})
