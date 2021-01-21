@@ -174,7 +174,11 @@ header .icon .icon-box {
     width: 36px;
     height: 36px;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 10px;
+}
+
+header .icon .icon-box:first-child {
+    margin-left: 0;
 }
 
 header .icon .icon-box:hover {
@@ -336,13 +340,16 @@ header.brand-lh {
 header.brand-lh nav {
     display: inline-block;
     width: auto;
-    margin-left: 20px;
     line-height: 60px;
 }
 
 header.brand-lh nav ul li {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 20px;
+}
+
+header.brand-lh nav ul li:last-child {
+    margin-right: 0;
 }
 
 header.brand-lh nav ul li a:hover {
@@ -1481,6 +1488,12 @@ footer.brand-footer .social {
     }
 }
 
+@media screen and (min-width: 992px) {
+    header.brand-lh .container {
+        max-width: 1000px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     header.l-header {
         display: block;
@@ -1518,5 +1531,11 @@ footer.brand-footer .social {
     footer.brand-footer .pic img {
         width: 100%;
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header.brand-lh .container {
+        max-width: 1140px;
     }
 }
